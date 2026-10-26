@@ -1,1 +1,1 @@
-export const API_URL = "apiwp.smartcortex.ai:8888"
+export const API_URL = "http://apiwp.smartcortex.ai:8888"
