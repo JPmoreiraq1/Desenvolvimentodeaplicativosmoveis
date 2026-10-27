@@ -7,9 +7,23 @@ const Stack = createNativeStackNavigator();
 
 export default function AppStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="ListaTarefas" component={ListaTarefas} />
-      <Stack.Screen name="NovaTarefa" component={NovaTarefa} />
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: "#1e88e5" },
+        headerTintColor: "#fff",
+        headerTitleStyle: { fontWeight: "bold" },
+      }}
+    >
+      <Stack.Screen
+        name="ListaTarefas"
+        component={ListaTarefas}
+        options={{ title: "Lista de Tarefas" }}
+      />
+      <Stack.Screen
+        name="NovaTarefa"
+        component={NovaTarefa}
+        options={{ title: "Nova Tarefa" }}
+      />
     </Stack.Navigator>
   );
 }
